@@ -1,0 +1,201 @@
+body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:url(logo/abstract-falling-lights-dark-background-vector-1489468.jpg);
+    background-size: cover;
+    
+    height: 90vh;  
+        
+}
+/* The main container */
+.wrapper{
+    position: relative;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 550px;
+    background: #1c1c1c;
+    overflow: hidden; 
+}
+
+.wrapper::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background:linear-gradient(60deg,transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    
+}
+.wrapper::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background:linear-gradient(60deg,transparent, #d9138a,#d9138a);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+    
+    
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+       
+}
+    100%{
+        transform: rotate(360deg);
+       
+}
+}  
+/* form styles */
+form{
+    inset: 2px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background:#23242a;
+    z-index: 10;
+
+   
+}
+/* Login */
+.wrapper h1{
+    
+    text-align: center;
+    color: rgb(231, 241, 245);
+}
+
+input{
+    width: 85%;
+    margin-left: 10px;
+    background: none;
+    height: 42px;
+   
+
+}
+#mail{
+    border: 2px solid rgb(12, 172, 200) ;
+    color: aliceblue;
+    width: 90%;
+    outline: none;
+
+}
+#pass{
+    border: 2px solid rgb(200, 12, 118);
+    margin-top: 17px;
+    color: aliceblue;
+    width: 90%;
+     outline: none;
+    
+}
+span{
+    color: aliceblue;
+    
+    margin-left: 10px;
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 17px;
+    margin-right: 22px;
+    margin-top: 22px;
+    
+
+}
+.links a{
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+   
+}
+h2{
+    
+    text-align: center;
+    color: rgb(231, 241, 245);
+}
+
+.google{
+    display: flex;
+    background: white;
+    border: 2px solid ;
+    width: 95%;
+    margin: 7px;
+    text-align: center;
+    border-radius: 27px;
+    align-items: center;
+    
+}
+.google img{
+    margin-left: 20px;
+    width: 27px;
+}
+.google a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.google p{
+    margin-left: 50px; 
+}
+.fb{
+    background:white;
+    border: 2px solid ;
+    width: 95%;
+    margin: 7px;
+    display: flex;
+    border-radius: 27px;
+    align-items: center;
+    
+}
+.fb img{
+    width: 35px;
+    margin-left: 20px;
+}
+.fb p{
+    margin-left: 50px; 
+}
+.fb a{
+    text-decoration: none;
+    color:#1c1c1c;
+}
+
+
+.inputbtn{
+
+    width: 55%;
+    display: flex;
+    margin-left: 31%;
+    margin-top: 20px;
+  
+    
+}
+.inputbtn input{
+    width: 55%;
+    background: #45f3ff;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;    
+}
+.inputbtn input:active{
+    background: linear-gradient(90deg,#45f3ff, #d9138a);
+    opacity: 0.8;
+}
+
+
+
